@@ -3,7 +3,9 @@ package com.by_westik.example.giphyapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.by_westik.example.giphyapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
