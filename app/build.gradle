@@ -3,7 +3,9 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
     id 'dagger.hilt.android.plugin'
+    id 'androidx.navigation.safeargs'
 }
 
 android {
@@ -38,9 +40,6 @@ android {
         viewBinding true
     }
 
-    dataBinding {
-        enabled = true
-    }
 }
 
 dependencies {

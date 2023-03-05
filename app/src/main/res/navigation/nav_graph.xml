@@ -8,8 +8,22 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.by_westik.example.giphyapp.MainFragment"
-        android:label="Notes"
+        android:label="Main"
         tools:layout="@layout/fragment_main">
+        <argument
+            android:name="giphy"
+            app:argType="com.by_westik.example.giphyapp.data.model.Giphy" />
+        <action
+            android:id="@+id/action_mainFragment_to_giphyFragment"
+            app:destination="@id/giphyFragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/giphyFragment"
+        android:name="com.by_westik.example.giphyapp.GiphyFragment"
+        android:label="Giphy"
+        tools:layout="@layout/fragment_giphy">
 
     </fragment>
 

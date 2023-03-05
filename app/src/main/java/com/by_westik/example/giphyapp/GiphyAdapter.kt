@@ -3,6 +3,7 @@ package com.by_westik.example.giphyapp
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -50,6 +51,12 @@ class GiphyAdapter : RecyclerView.Adapter<GiphyViewHolger>() {
     override fun onBindViewHolder(holder: GiphyViewHolger, position: Int) {
         val currentGiphy = differ.currentList[position]
         holder.bind(currentGiphy.images.preview_gif.url)
+
+      /*  holder.itemView.setOnClickListener { view ->
+            val direction = MainFragmentDirections.actionMainFragmentToGiphyFragment()
+            view.findNavController().navigate(direction)
+        }
+*/
     }
 
     override fun getItemCount(): Int {
