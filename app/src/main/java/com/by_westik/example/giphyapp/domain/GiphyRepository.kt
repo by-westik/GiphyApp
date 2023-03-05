@@ -13,4 +13,8 @@ class GiphyRepository @Inject constructor(
     suspend fun getTrending(): Resource<List<Giphy>> {
         return Resource.Success(apiService.getTrendingData().data)
     }
+
+    suspend fun searching(query: String): Resource<List<Giphy>> {
+        return Resource.Success(apiService.getSearchingData(query).data)
+    }
 }
