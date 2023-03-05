@@ -1,7 +1,7 @@
 package com.by_westik.example.giphyapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.by_westik.example.giphyapp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 

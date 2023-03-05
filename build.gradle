@@ -4,7 +4,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath "com.google.dagger:hilt-android-gradle-plugin:2.40.5"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.0"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.42"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
     }
 }
