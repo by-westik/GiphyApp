@@ -11,10 +11,10 @@ class GiphyRepository @Inject constructor(
 ) {
 
     suspend fun getTrending(): Resource<List<Giphy>> {
-        return Resource.Success(apiService.getTrendingData().data)
+        return Resource.Success(apiService.getTrendingData(25).data)
     }
 
     suspend fun searching(query: String): Resource<List<Giphy>> {
-        return Resource.Success(apiService.getSearchingData(query).data)
+        return Resource.Success(apiService.getSearchingData(query, 25).data)
     }
 }
